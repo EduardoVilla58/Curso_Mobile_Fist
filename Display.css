@@ -1,0 +1,388 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif;
+}
+:root{
+    --bitcoin-orange: #f7931a;
+    --soft-orange: #ffe9d5;
+    --secondary-blue: #1a9af7;
+    --soft-blue: #e7f5ff;
+    --warm-black: #282623;
+    --black: #201e1c;
+    --grey: #bababa;
+    --off-white: #faf8f7;
+    --just-white: #fff;
+    --other-grey: #757575;
+    --grey-2:#B5B0AC;
+}
+
+header{
+    width: 100%;
+    min-width: 300px;
+    max-width: 340px;
+    height: 334px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background:linear-gradient(207.8deg, var(--black) 16.69%, var(--bitcoin-orange) 100%);
+}
+header img{
+    width: 150px;
+    height: 24px;
+    margin-top: 60px;
+}
+.header_title{
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    color: var(--just-white);
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    text-align: center;
+    margin-top: 36px;
+}
+header p{
+    text-align: center;
+    color: var(--soft-orange);
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    margin-top: 28px;
+}
+.header_botton{
+    position: absolute;
+    top: 270px;
+    width: 229px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--off-white);
+    text-decoration: none;
+    color: var(--warm-black);
+    font-size: 1.4rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    margin-top: 32px;
+}
+.header_botton span{
+    background-image: url("./Assets/icons/down-arrow.svg");
+    width: 13px;
+    height: 8px;
+    margin-left: 10px;
+}
+main{
+    width: 100%;
+    height: auto;
+    background-color: var(--off-white);
+    max-width: 340px;
+}
+.main_section_1{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.main_section_1 img{
+    width: 200px;
+    height: 200px;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.main_section_1 h2{
+    color: var(--warm-black);
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 40px;
+}
+.main_section_1 p{
+    color: var(--other-grey);
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: 500;
+    margin-top: 30px;
+}
+.Tablas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: var(--off-white);
+}
+.Tablas .Title{
+    width: 60%;
+    height: auto;
+    text-align: start;
+}
+.Tablas .Title h2{
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 2.3rem;
+    color: var(--bitcoin-orange);
+    margin-top: 48px;
+    padding-left: 10px;
+}
+.Contenedor_Tabla_Monedas{
+    width: 60%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 39px 39px 39px 39px;
+    margin: 0 auto;
+    margin-top: 22px;
+    justify-items:start;
+}
+.Contenedor_Tabla_Monedas .Cripto_Moneda{
+    font-family: 'Inter', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    font-weight: 400;
+    padding: 10px 12px;
+    color: var(--grey-2);
+}
+.Contenedor_Tabla_Monedas .Valor{
+    font-family: 'Inter', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.7rem;
+    font-weight: 400;
+    padding: 10px 12px;
+    color: var(--other-grey);
+}
+.Icono_Valor1, .Icono_Valor3, .Icono_Valor4{
+    background-image: url("./Assets/icons/trending-down.svg");
+    width: 16px;
+    height: 16px;
+    margin-left: 10px;
+    display: inline-block;
+    background-size: cover;
+}
+.Valor .Icono_Valor2{
+    background-image: url("./Assets/icons/trending-up.svg");
+    width: 16px;
+    height: 16px;
+    margin-left: 10px;
+    display: inline-block;
+    background-size: cover;
+}
+.Fecha_Actualizacion{
+    width: 173px;
+    height: 36px;
+    background-color: var(--soft-orange);
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+.Fecha_Actualizacion p{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.Tarjetas{
+    width: 100%;
+    height: auto;
+    background-color: var(--black);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Title_SubTitle{
+    width: 90%;
+    height: 100px;
+    margin-top: 50px;
+    margin-bottom: 32px;
+}
+.Title_SubTitle h2{
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    color: var(--just-white);
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 24px;
+}
+.Title_SubTitle p{
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: #808080;
+    text-align: center;
+    font-weight: 500;
+}
+.Tarjeta_1, .Tarjeta_2, .Tarjeta_3, .Tarjeta_4{
+    width: 90%;
+    height: 165px;
+    background-color: var(--warm-black);
+    box-shadow:  0px 4px 8px rgba(0, 0, 0, 0.16);
+    border-radius: 10px;
+    margin-top: 16px;
+}
+.Tarjeta_1 img, .Tarjeta_2 img, .Tarjeta_3 img, .Tarjeta_4 img {
+    margin-top: 16px;
+    margin-left: 18px;
+    width: 20px;
+    height: 20px;
+}
+.Tarjeta_1 h2, .Tarjeta_2 h2, .Tarjeta_3 h2, .Tarjeta_4 h2{
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    color: var(--just-white);
+    margin-left: 18px;
+    margin-top: 12px;
+}
+.Tarjeta_1 p, .Tarjeta_2 p, .Tarjeta_3 p, .Tarjeta_4 p{
+    width: 80%;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: #808080;
+    margin-left: 18px;
+    margin-top: 10px;
+}
+.Tarjeta_4{
+    margin-bottom: 47px;
+}
+.Imagen{
+    width: 100%;
+    height: 385px;
+    background-image: url('./Assets/img/bitcoinbaby.png');
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+}
+.Imagen p{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 26px;
+    color: var(--just-white);
+    text-align: center;
+    position: relative;
+    bottom: -64px;
+}
+.Planes{
+    width: 100%;
+    height: auto;
+    background-color: var(--off-white);
+    padding-top: 60px;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Planes_Textos{
+    width: 91%;
+}
+.Planes_Textos h2{
+    font-weight: bolder;
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+    color: var(--warm-black);
+    text-align: center;
+    margin-bottom: 24px;
+}
+.Planes_Textos p{
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: var(--other-grey);
+    text-align: center;
+    margin-bottom: 34px;
+}
+.Planes_Scroll{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+.Planes_Cards{
+    width: 60%;
+    height: auto;
+    background-color: var(--just-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    position: relative;
+    scroll-snap-align: center;
+    margin: 0 30px 0;
+}
+.Planes_Cards .Recomendado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 101px;
+    height: 31px;
+    background-color: var(--bitcoin-orange);
+    margin: 0 auto;
+    border-radius: 5px;
+    position:absolute;
+    top: -14px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    color: var(--just-white);
+}
+.Pago_Anual{
+    font-size: 1.4rem;
+    font-weight: bolder;
+    line-height: 1.8rem;
+    margin-top: 35px;
+}
+.Precio{
+    font-size: 5.2rem;
+    line-height: 6.3rem;
+    font-weight: bolder;
+    position: relative;
+}
+.Precio span{
+    font-weight: bolder;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    position: relative;
+    bottom: 26px;
+}
+.Ahorro{
+    width: 80%;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: var(--other-grey);
+    text-align: center;
+}
+.Planes_Cards button{
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    padding: 15px 15px;
+    border: solid 2px var(--bitcoin-orange);
+    border-radius: 5px;
+    margin-top: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+.Planes_Cards button span{
+    background-image: url(./Assets/icons/orange-right-arrow.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+}
+
